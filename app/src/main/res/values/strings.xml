@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">WeatherZadravec</string>
+    <string name="add_location">Add location</string>
+    <string name="weather_icon">Weather icon</string>
+    <string name="temperature">Temperature</string>
+    <string name="text_location_temperature">Temperature: %s °C</string>
+    <string name="text_temperature">%s °C</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="allow_weather_track">Allow weather track</string>
+    <string name="don_t_allow">Don\'t allow</string>
+    <string name="allow">Allow</string>
+    <string name="allow_application_to_track_incoming_bad_weather_when_app_is_closed">Allow application to track incoming bad weather when app is closed.</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-v24/ic_baseline_add_24.xml" value="0.3145833333333333" />
+        <entry key="app/src/main/res/layout/activity_add_location.xml" value="0.22282608695652173" />
+        <entry key="app/src/main/res/layout/activity_location_detail.xml" value="0.22282608695652173" />
+        <entry key="app/src/main/res/layout/activity_locations.xml" value="0.22282608695652173" />
+        <entry key="app/src/main/res/layout/dialog_foreground_service.xml" value="0.1752786220871327" />
+        <entry key="app/src/main/res/layout/fragment_blank.xml" value="0.284375" />
+        <entry key="app/src/main/res/layout/fragment_place.xml" value="0.21331521739130435" />
+        <entry key="app/src/main/res/layout/item_location.xml" value="0.335" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

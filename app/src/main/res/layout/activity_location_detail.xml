@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.locations.locationDetail.LocationDetailActivity">
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_view_date_today"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary3"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/image_view_today"
+        app:layout_constraintEnd_toStartOf="@+id/text_view_date_tomorrow"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="15-09-2021" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_view_date_tomorrow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary3"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/image_view_tomorrow"
+        app:layout_constraintEnd_toStartOf="@+id/text_view_date_tomorrow_after"
+        app:layout_constraintStart_toEndOf="@+id/text_view_date_today"
+        tools:text="15-09-2021" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_view_date_tomorrow_after"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary3"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/image_view_tomorrow_after"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_view_date_tomorrow"
+        tools:text="15-09-2021" />
+
+    <ImageView
+        android:id="@+id/image_view_today"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:contentDescription="@string/weather_icon"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_baseline_wb_sunny_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/image_view_tomorrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_view_tomorrow"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:contentDescription="@string/weather_icon"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_baseline_wb_sunny_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/image_view_tomorrow_after"
+        app:layout_constraintStart_toEndOf="@+id/image_view_today"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_view_tomorrow_after"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:contentDescription="@string/weather_icon"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_baseline_wb_sunny_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_view_tomorrow"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_view_temp_today"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary3"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/text_view_date_tomorrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_today"
+        tools:text="12°C" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_view_temp_tomorrow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary3"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/text_view_date_tomorrow_after"
+        app:layout_constraintStart_toEndOf="@+id/text_view_date_today"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_tomorrow"
+        tools:text="20°C" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_view_temp_tomorrow_after"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary3"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_view_date_tomorrow"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_tomorrow_after"
+        tools:text="28°C" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
